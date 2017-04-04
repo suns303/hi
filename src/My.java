@@ -10,5 +10,6 @@ public class My {
         int total = busfee + lunch;
 
         System.out.println("토탈금액은" + busfee + lunch);
+        System.out.println("another line");
     }
 }
