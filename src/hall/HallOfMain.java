@@ -1,9 +1,12 @@
 package hall;
 
+import hall.model.HallofFame;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.lang.String;
 
 /**
  * Created by danawacomputer on 2017-04-11.
@@ -47,7 +50,11 @@ public class HallOfMain {
 //                fame.setVotes(Integer.parseInt(splitted[5]));
 //            }
 //            fames.add(fame);
+
+
         }
+
+
         //2. mapping
         // HallOffame --> playerAverage
 

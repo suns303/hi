@@ -15,11 +15,28 @@ public class passwordre {
 
         soonsung = soonsung.substring(0,1).toUpperCase()+soonsung.substring(1);
 
+
+
+
         String password = prefix+soonsung+SquareLengchar+prepost;
 
-        System.out.println(password);
 
+        double hwang = result(soonsung.length());
+
+        String jusun = sujung(prefix,soonsung,SquareLengchar,prepost);
+
+        System.out.println(hwang);
+        System.out.println(jusun);
 
     }
+    public static double result(int soonsung){
+        double hwang =soonsung*soonsung;
+                return hwang;
+    }
+    public static String sujung(String prefix,String soonsung,int SquareLengchar,String prepost){
+        String jusun = prefix+soonsung+SquareLengchar+prepost;
+        return jusun;
+    }
+
 }
 

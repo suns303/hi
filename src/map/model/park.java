@@ -1,11 +1,7 @@
-package majorleague;
-
-import kotlin.reflect.jvm.internal.impl.descriptors.EffectiveVisibility;
-
-import java.util.ArrayList;
+package map.model;
 
 /**
- * Created by danawacomputer on 2017-04-10.
+ * Created by danawacomputer on 2017-04-13.
  */
 public class park {
     private String parkKey;
@@ -15,16 +11,16 @@ public class park {
     private String state;
     private String country;
 
-
-
-    public park(String parkKey, String parkName, String parkAlias,
-                String city, String state, String country){
-        this.parkKey = parkKey;
-        this.parkName = parkName;
-        this.parkAlias = parkAlias;
-        this.city = city;
-        this.state = state;
-        this.country = country;
+    @Override
+    public String toString() {
+        return "park{" +
+                "parkKey='" + parkKey + '\'' +
+                ", parkName='" + parkName + '\'' +
+                ", parkAlias='" + parkAlias + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 
     public String getParkKey() {
@@ -72,6 +68,15 @@ public class park {
     }
 
     public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public park(/*String parkKey,*/String parkName, String parkAlias, String city, String state, String country) {
+        this.parkKey = parkKey;
+        this.parkName = parkName;
+        this.parkAlias = parkAlias;
+        this.city = city;
+        this.state = state;
         this.country = country;
     }
 }

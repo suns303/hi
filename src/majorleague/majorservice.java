@@ -8,11 +8,10 @@ import java.util.List;
 public class majorservice {
 
     public int sumOfNotUS(List<park> list){
-        int count=0;
-        String checkUs = "US";
 
+        int count=0;
         for(park e : list){
-            if( !(e.getCountry().equals(checkUs))){
+            if(!e.getCountry().equals("US")){
                 count++;
             }
         }
@@ -22,7 +21,7 @@ public class majorservice {
         int count =0;
 
         for (park e : list){
-            if(!(e.getParkAlias().equals("")))
+            if((!e.getParkAlias().equals("")))
                 count++;
         }
         return count;

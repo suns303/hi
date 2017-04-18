@@ -7,9 +7,8 @@ public class My {
         int busfee = 500;
         int lunch = 5000;
 
-        int total = busfee + lunch;
-
-        System.out.println("토탈금액은" + busfee + lunch);
+        int total = (busfee+lunch);
+        System.out.println("토탈금액은" + total);
         System.out.println("another line");
     }
 }

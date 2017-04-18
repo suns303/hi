@@ -7,17 +7,12 @@ import java.util.List;
  */
 public class GourmetService {
 
-    public double calcAverScore(List<Gourmet> gourmetList) {
-
+    public double calcAverageScore(List<Gourmet> gourmetList) {
 
         int sum = 0;
         for (Gourmet e : gourmetList) {
-            sum += e.score;
+            sum += e.getScore();
         }
-        double average = (double) sum / gourmetList.size();
-        return average;
-
+        return (double)sum / gourmetList.size();
     }
-
-
 }
